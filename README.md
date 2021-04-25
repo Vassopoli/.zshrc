@@ -24,8 +24,15 @@ Configuration used by me on zsh
     cd zshrc
     ```
 
-3. And finally, create a hard link in your home folder. Note the `-f` flag that forces the link creation, overriding existing auto-generated `.zshrc`.
+3. Create a hard link in your home folder. Note the `-f` flag that forces the link creation, overriding existing auto-generated `.zshrc`.
 
     ```sh
     ln -f ./.zshrc $HOME/.zshrc
     ```
+
+4. And finally, source the new .zshrc (or close your terminal and open a new one)
+
+    ```sh
+    source $HOME/.zshrc
+    ```
+
